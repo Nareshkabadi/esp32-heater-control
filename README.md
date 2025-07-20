@@ -1,9 +1,9 @@
 
-## ESP32 Heater Control System
+# ESP32 Heater Control System
 This project implements a temperature-based heater control system using an ESP32 microcontroller and a DHT22 sensor.
 It uses FreeRTOS for multitasking and Serial communication for real-time logging and debugging.
 
-# Features
+## Features
 1. Temperature Monitoring
 + Reads temperature continuously from a DHT22 sensor.
 + Uses temperature data to determine the heater's operational state.
@@ -31,28 +31,28 @@ The system operates with five states:
 + tempTask: Reads temperature every 2 seconds.
 + controlTask: Manages LED & buzzer every 0.5 seconds.
 
-# Hardware Requirements
+## Hardware Requirements
 + ESP32 Development Board
 + DHT22 Temperature Sensor
 + 1 LED (heater indicator)
 + 1 Buzzer
 
-# Pin Configuration
+## Pin Configuration
 + DHTPIN: GPIO 15 (DHT22 Data)
 + LED_PIN: GPIO 2 (Heater Indicator)
 + BUZZER_PIN: GPIO 4 (Buzzer Alarm)
 
-# How to Use (Simulation)
+## How to Use (Simulation)
 1. Open the Wokwi Simulation: https://wokwi.com/projects/437001551170110465
 2. Click Play in Wokwi to run the system.
 3. Open the Serial Monitor to see real-time temperature and state logs.
 4. Adjust the DHT22 temperature slider to test different states and observe LED and buzzer behavior.
 
-# Development Environment
+## Development Environment
 + To upload the code to an ESP32 board:
 + Add DHT sensor library (via Library Manager).
 
-# Future Enhancements
+## Future Enhancements
 + Add Relay Control: For switching real heating elements.
 + Wi-Fi Integration: Monitor & control via mobile/web app (MQTT or HTTP).
 + Multiple Heating Profiles: (Low/Medium/High).
