@@ -43,7 +43,7 @@ The system operates with five states:
 + BUZZER_PIN: GPIO 4 (Buzzer Alarm)
 
 ## How to Use (Simulation)
-1. Open the Wokwi Simulation: https://wokwi.com/projects/437001551170110465
+1. Open the Wokwi Simulation
 2. Click Play in Wokwi to run the system.
 3. Open the Serial Monitor to see real-time temperature and state logs.
 4. Adjust the DHT22 temperature slider to test different states and observe LED and buzzer behavior.
@@ -59,3 +59,6 @@ The system operates with five states:
 + Scheduled Heating: Add RTC or NTP-based time scheduling.
 + PID Control: Smooth & precise temperature control.
 + OLED/LCD Display: For real-time temperature display.
+
+## Wokwi Simulation Link
+[Click Here to View the Simulation](https://wokwi.com/projects/437001551170110465)
