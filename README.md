@@ -4,11 +4,11 @@ This project implements a temperature-based heater control system using an ESP32
 It uses FreeRTOS for multitasking and Serial communication for real-time logging and debugging.
 
 ## Features
-1. Temperature Monitoring
+### 1. Temperature Monitoring
 + Reads temperature continuously from a DHT22 sensor.
 + Uses temperature data to determine the heater's operational state.
 
-2. Temperature-Based State Machine
+### 2. Temperature-Based State Machine
 The system operates with five states:
 + IDLE: Temperature below 25°C (heater OFF).
 + HEATING: Temperature between 25°C and 34.9°C (heater ON).
@@ -16,18 +16,18 @@ The system operates with five states:
 + TARGET_REACHED: Temperature between 45°C and 54.9°C (heater ON, maintaining target).
 + OVERHEAT: Temperature 55°C or above (heater OFF, buzzer alarm ON).
 
-3. Heater Control
+### 3. Heater Control
 + Simulated heater control (LED indicator) based on current system state.
 + Buzzer alarm activates during the OVERHEAT state.
 
-4. Visual & Audible Feedback
+### 4. Visual & Audible Feedback
 + LED (GPIO 2): Turns ON during heating or target reached states.
 + Buzzer (GPIO 4): Alerts when temperature exceeds the safety threshold (55°C).
 
-5. Serial Logging
+### 5. Serial Logging
 + Outputs temperature readings and system states to the Serial Monitor for real-time monitoring.
 
-6. FreeRTOS Integration
+### 6. FreeRTOS Integration
 + tempTask: Reads temperature every 2 seconds.
 + controlTask: Manages LED & buzzer every 0.5 seconds.
 
